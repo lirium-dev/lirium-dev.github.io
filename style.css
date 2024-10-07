@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes ping{0%{transform:scale(.2);opacity:.8}80%{transform:scale(1.2);opacity:0}100%{transform:scale(2.2);opacity:0}}
+
+
+
+* {
+    font-family: Montserrat;
+}
+
+
+
+
+.container2 {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 1.0fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "burig . ."
+        "Text . wbild"
+        ". mouse-down .";
+        
+}
+
+
+
+.bilds{
+    padding-right: 20px;
+}
+
+.wbild {
+    grid-area: wbild;
+    padding-top: 20%;
+    
+}
+
+
+.burig {
+    grid-area: burig;
+}
+
+.mouse-down {
+    grid-area: mouse-down;
+}
+
+.Text {
+    grid-area: Text;
+    font-size: 70px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    font-weight: 400;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.hamburger-icon-container {
+    color: #0E0E0E;
+    height: 1.7em;
+    width: 1.7em;
+    position: relative;
+    cursor: pointer;
+    background: currentColor;
+    border: 10px solid currentColor;
+    border-radius: 3px;
+}
+
+.hamburger-icon,
+.hamburger-icon:before,
+.hamburger-icon:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 1.7em;
+    background: white;
+    transition: all .2s ease;
+}
+
+.hamburger-icon {
+    top: 0.75em
+}
+
+.hamburger-icon:before {
+    top: -0.55em
+}
+
+.hamburger-icon:after {
+    top: 0.55em
+}
+
+.hamburger-icon:after:hover {
+    background: rgb(179, 179, 179);
+}
+
+
+#mousedown {
+
+    padding-top: 40px;
+    animation:ping 4s ease-in-out infinite both
+
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth; 
+    overflow: hidden; 
+    background-color: #0E0E0E;
+    color: white;
+    user-select: none;
+    
+  }
+
+  .container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+  }
+
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section {
+    height: 100vh; 
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+
+
+
+.section-1:before{
+
+  
+}
+
+  .section-1 {
+
+    background-color: #0E0E0E;
+
+  }
+
+  .section-2 {
+    background-color: #0E0E0E;
+  }
+
+  .section-3 {
+    background-color: #0E0E0E;
+  }
+
+  
