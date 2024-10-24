@@ -9,14 +9,14 @@ ready(main);
 function main() {
 
 
-const skills = ["Frontend Developer", "Backend Developer", "Graphic Designer", "Video Editor"]
+const skills = ["Frontend Developer", "Backend Developer", "Graphic Designer", "Video Editor", "Perfectionist"]
 
 let varT = document.getElementById("varT")
 
 
 var textIndex = 0; 
 var i = 0; 
-var speed = 69;  
+var speed = 120;  
 
 var deleting = false; 
 
@@ -48,8 +48,6 @@ function typeWriter() {
     }
   }
 }
-
-
 
 typeWriter();  
 
