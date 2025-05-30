@@ -9,7 +9,7 @@ ready(main);
 function main() {
 
 
-const skills = ["System Admin", "Webdeveloper", "Graphic Designer", "Video Editor", "Perfectionist"]
+const skills = ["System Admin", "Webdeveloper", "Graphic Designer", "Video Editor", "Perfectionist."]
 
 let varT = document.getElementById("varT")
 
