@@ -30,7 +30,7 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   } else if (deleting && i >= 0) {
     
-    varT.innerHTML = "I'm a " + currentText.substring(0, i);
+    varT.innerHTML = "I'm a " + currentText.substring(0, i) + "_";
     i--;
     setTimeout(typeWriter, speed);
   } else {
